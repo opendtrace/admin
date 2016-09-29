@@ -14,7 +14,8 @@ os_version=$2
 # Prep for a new import
 rm -rf *
 
-tar --strip-components 1 -xf ../../tarballs/opensource.apple.com/tarballs/dtrace/${tarball}.tar.gz
+# Point this at your directory of tarballs
+tar --strip-components 1 -xf ../tarballs/opensource.apple.com/tarballs/dtrace/${tarball}.tar.gz
 
 git add .
 
